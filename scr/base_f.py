@@ -1,21 +1,19 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Figure(ABC):
     def __init__(self,name):
         self.name = name
 
+
+    @abstractmethod
     def get_perimetr(self):
-        raise NotImplementedError ("определите фукция в доч классе")
+        pass
 
-    def perimetr(self):
-        return self.get_perimetr()
 
-    def get_area(self):
-        raise NotImplementedError ("определите фукция в доч классе")
-
+    @abstractmethod
     def area(self):
-        return self.get_area()
+        pass
 
     def add_area(self, name2):
         if not isinstance(name2, Figure):

@@ -14,7 +14,7 @@ class Circle(Figure):
     def get_perimetr(self):
         return int(2 * self.r * math.pi)
 
-    def get_area(self):
+    def area(self):
         return int(math.pi * self.r**2)
 
 

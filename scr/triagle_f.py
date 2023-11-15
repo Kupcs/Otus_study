@@ -20,15 +20,8 @@ class Triagle(Figure):
         p = int(self.side_a + self.side_b + self.side_c)
         return p
 
-    def get_area(self):
+    def area(self):
         """"для расчета площади треугольник исп формула Герона"""
         p = int((self.side_a + self.side_b + self.side_c) / 2)
         s = math.sqrt(p * (p - self.side_a) * (p - self.side_b) * (p - self.side_c))
         return s
-
-
-f1 = Triagle(3, 5, 6, name = "Triagle")
-f2 = Rectangle(3, 5, name = "Rectangle")
-f3 = Circle(2, name = "Circle")
-
-
