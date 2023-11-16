@@ -15,10 +15,10 @@ class Figure(ABC):
     def area(self):
         pass
 
-    def add_area(self, name2):
-        if not isinstance(name2, Figure):
+    def add_area(self, figure_2):
+        if not isinstance(figure_2, Figure):
             raise ValueError("Нужно передать фигуру")
-        return int(self.area()) + int(name2.area())
+        return int(self.area()) + int(figure_2.area())
 
 
 

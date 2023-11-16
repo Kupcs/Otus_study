@@ -1,4 +1,4 @@
-from base_f import Figure
+from base import Figure
 import math
 
 
@@ -12,9 +12,9 @@ class Circle(Figure):
         self.r = radius
 
     def get_perimetr(self):
-        return int(2 * self.r * math.pi)
+        return 2 * self.r * math.pi
 
     def area(self):
-        return int(math.pi * self.r**2)
+        return math.pi * self.r**2
 
 
