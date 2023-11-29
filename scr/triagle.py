@@ -1,5 +1,5 @@
 import math
-from base import Figure
+from scr.base import Figure
 
 
 class Triagle(Figure):
