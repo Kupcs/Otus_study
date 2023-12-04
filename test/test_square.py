@@ -2,9 +2,6 @@ import pytest
 from scr.square import Square
 
 
-def test_create_square_positive(for_square):
-    a = for_square
-    assert a > 0, f"сторона {a} квадрата меньше или ровна 0"
 
 @pytest.mark.parametrize(("side_a", "area"),
                         [(4, 16),

@@ -1,7 +1,5 @@
 import pytest
 from scr.circle import Circle
-def test_create_circle(r = 2):
-    assert r > 0, "радиус меньше или равен нулю"
 
 
 def test_area_circle(input_for_circle):

@@ -2,10 +2,6 @@ import pytest
 from scr.rectangle import Rectangle
 
 
-def test_create_rectangle(side_a = 2, side_b = 3):
-    assert side_a > 0, "сторона меньше или равна нулю"
-    assert side_b > 0, "сторона меньше или равна нулю"
-
 
 def test_area_positive(input_for_rectangle):
     side_a, side_b, area = input_for_rectangle
